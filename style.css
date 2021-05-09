@@ -216,6 +216,10 @@ body {
   margin-bottom: 50px;
 }
 
+.diatas-footer img {
+  height: 400px;
+}
+
 span.button-joinnow {
   /* display:inline-block; */
   color: black;
@@ -368,6 +372,11 @@ footer .copyright {
   .COO {
     width: 90%;
     margin: 20px 0;
+  }
+
+  .diatas-footer img {
+    width: 100%;
+    height: auto;
   }
 
   footer .content {
