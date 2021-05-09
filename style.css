@@ -7,8 +7,8 @@
 
 header {
   display: flex;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0 20px;
   background-color: #d8e8ff;
   height: 80px;
   justify-content: space-between;
@@ -38,13 +38,12 @@ header {
   justify-content: space-around;
   align-items: center;
   width: 40%;
-  padding-right: 20px;
+  /* padding-right: 20px; */
+  max-width: 1920px;
 }
 
 .btn {
-  padding: 10px 10px;
-  /* background-color: red; */
-  border-radius: 10px;
+  padding: 10px 5px;
 }
 
 /* Iseng Kevin */
@@ -64,7 +63,7 @@ header {
   right: 0;
   width: 0;
   height: 4px;
-  background-color: #9fbae0;
+  background-color: #6b83ac;
   transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
@@ -79,18 +78,24 @@ header {
 /* BURGER KING */
 span.menu-icon {
   float: right;
-  color: black;
+  color: rgb(42, 42, 42);
   font-size: 30px;
   display: none;
   /* margin-top: 14px; */
   height: 80px;
   padding-top: 22px;
   margin-right: 20px;
+  z-index: 2;
 }
 
 /* ====================================================================== */
 
 /* CSS BUAT BODY */
+
+body {
+  margin: auto;
+  max-width: 1920px;
+}
 
 /* CSS content atas*/
 .top-content {
@@ -123,6 +128,10 @@ span.menu-icon {
 .top-content-right {
   display: flex;
   justify-content: flex-end;
+}
+
+.top-content-right img {
+  max-width: 50vw;
 }
 
 /* Punya Peki */
@@ -179,20 +188,18 @@ span.menu-icon {
 .COO img {
   width: 200px;
 }
-.Name {
-  font-family: Poppins;
+.Name h1 {
+  margin: 20px 0;
   font-weight: bold;
 }
-.Person-title {
-  font-family: Poppins;
+.Person-title h2 {
+  margin: 20px 0;
 }
 .desc-Founder {
   text-align: center;
-  font-family: Poppins;
 }
 .desc-COO {
   text-align: center;
-  font-family: Poppins;
 }
 
 /* ====================================================================== */
@@ -275,9 +282,8 @@ footer .copyright {
 /* Tablet Version */
 
 @media all and (max-width: 1000px) {
-  .top-content {
-    margin: 10px 0;
-    /* padding-bottom: 30px; */
+  .header-right {
+    width: 60%;
   }
 
   .ninja-img {
@@ -285,11 +291,11 @@ footer .copyright {
   }
 
   .top-content-left {
-    margin-left: 20px;
+    margin: 20px;
   }
 
   .top-content-right img {
-    max-width: 50vw;
+    max-width: 40vw;
   }
 
   footer {
@@ -368,9 +374,5 @@ footer .copyright {
     height: 350px;
     flex-direction: column;
     text-align: center;
-  }
-
-  footer .content .logo {
-    /* padding: 20px 0; */
   }
 }
